@@ -10,7 +10,7 @@ using System.Windows;
 // hi here, i'm an awful coder, so please clean up for me if it really bothers you (and like, this code is *really* stupid, sorry)
 // this code accounts for ALL gpu's in the system and tries to work out the best conditions for installing DXVK
 // so please don't strip the functionality
-namespace GTAIVSetupUtilityWPF.Functions
+namespace DXVKInstallerUI.Functions
 {
     public static class VulkanChecker
     {

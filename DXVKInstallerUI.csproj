@@ -7,17 +7,17 @@
 	<UseWPF>true</UseWPF>
 	<DebugType>embedded</DebugType>
 	<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
-	<Version>1.6.0</Version>
+	<Version>0.1.0</Version>
 	<ApplicationIcon>Assets\ivlogo.ico</ApplicationIcon>
 	<AssemblyName>$(MSBuildProjectName)</AssemblyName>
-	<Title>Gillian's GTA IV Setup Utility</Title>
+	<Title>DXVKInstallerUI</Title>
 	<Company>$(Authors)</Company>
 	<Authors>Gillian</Authors>
-	<Description>Semi-automatic setup utility for GTA IV</Description>
+	<Description>Semi-automatic DXVK installer</Description>
 	<PackageIcon>ivlogo256.png</PackageIcon>
-	<PackageProjectUrl>https://gillian-guide.github.io/</PackageProjectUrl>
+	<PackageProjectUrl>https://github.com/SandeMC/DXVKInstallerUI</PackageProjectUrl>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<RepositoryUrl>https://github.com/SandeMC/GTAIVSetupUtilityWPF</RepositoryUrl>
+	<RepositoryUrl>https://github.com/SandeMC/DXVKInstallerUI</RepositoryUrl>
 	<PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 

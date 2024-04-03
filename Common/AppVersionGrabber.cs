@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace GTAIVSetupUtilityWPF.Common
+namespace DXVKInstallerUI.Common
 {
     public static class AppVersionGrabber
     {

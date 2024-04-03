@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Windows;
 
-namespace GTAIVSetupUtilityWPF.Common
+namespace DXVKInstallerUI.Common
 {
 
     // this code has been brought to you by chatgpt:tm: because i have NO FUCKING IDEA WHAT ANY OF THIS MEANS
