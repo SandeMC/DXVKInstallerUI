@@ -1,0 +1,42 @@
+﻿<Window x:Class="DXVKInstallerUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DXVKInstallerUI"
+        mc:Ignorable="d"
+        Title="DXVK Installer"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen"
+        Icon="/Assets/ivlogo.png"
+        ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="5,5,5,5" Grid.ColumnSpan="2">
+            <TextBlock Margin="0,0,0,0" FontSize="28" TextWrapping="Wrap" HorizontalAlignment="Center">DXVK Installer</TextBlock>
+            <TextBlock x:Name="directorytxt" HorizontalAlignment="Center" Margin="0,5,0,0" TextWrapping="Wrap" Text="Select the game exe:" VerticalAlignment="Top" FontWeight="SemiBold" TextDecorations="Underline"/>
+            <StackPanel Orientation="Horizontal" Margin="0,2,0,0" HorizontalAlignment="Center">
+                <TextBox x:Name="gamedirectory" VerticalAlignment="Top" Width="193" IsEnabled="False" Height="20"/>
+                <Button Content="Open..." Margin="5,0,0,0" VerticalAlignment="Top" Width="60" Click="Button_Click" Height="20"/>
+            </StackPanel>
+            <TextBlock x:Name="tipsnote" Margin="0,0,0,0" FontSize="12" TextWrapping="Wrap" HorizontalAlignment="Center" FontWeight="SemiBold" TextDecorations="Underline" Visibility="Collapsed">Keep the options at default values unless you know what you're doing.</TextBlock>
+            <StackPanel Margin="0,5,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <CheckBox x:Name="tipscheck" Margin="5,0,0,0" IsChecked="True" HorizontalAlignment="Right">Tips</CheckBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,0">
+                <StackPanel x:Name="dxvkPanel" IsEnabled="False">
+                    <CheckBox Content="Install the async patch" x:Name="asynccheckbox" Margin="0,0,0,0" HorizontalAlignment="Left" IsChecked="True" Click="async_Click"/>
+                    <CheckBox Content="Enable VSync" x:Name="vsynccheckbox" HorizontalAlignment="Left" Margin="0,5,0,0" IsChecked="True" Click="vsync_Click"/>
+                    <CheckBox Content="Set Max Frame Latency" x:Name="framelatencycheckbox" HorizontalAlignment="Left" Margin="0,5,0,0" IsChecked="True" Click="latency_Click"/>
+                    <Button Content="Install DXVK" x:Name="installdxvkbtn" HorizontalAlignment="Left" Margin="0,5,0,0" VerticalAlignment="Top" Width="160" Height="25" Click="installdxvkbtn_Click" FontWeight="SemiBold"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <TextBlock HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Bottom"><Hyperlink NavigateUri="https://github.com/doitsujin/dxvk/issues" RequestNavigate="Hyperlink_RequestNavigate">DXVK Issue Tracker</Hyperlink></TextBlock>
+                <TextBlock HorizontalAlignment="Right" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Bottom"><Hyperlink NavigateUri="hub.com/SandeMC/DXVKInstallerUI" RequestNavigate="Hyperlink_RequestNavigate">This tool is open source</Hyperlink></TextBlock>
+                <Button x:Name="aboutButton" Margin="3,0,0,0" Width="20" HorizontalAlignment="Right" Click="aboutButton_Click">
+                    <Image Source="../Assets/about.png"></Image>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
